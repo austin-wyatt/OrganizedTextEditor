@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="OrganizedTextEditor.Controls.Sections.SectionComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OrganizedTextEditor.Controls.Sections"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="contentGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="labelPanel" HorizontalAlignment="Left"  Grid.Column="1" Orientation="Horizontal" Background="Transparent">
+            <TextBlock x:Name="sectionTextBlock" Text="Section" FontFamily="Consolas"/>
+            <Button x:Name="addButton"/>
+        </StackPanel>
+        <!--<RichTextBox x:Name="sectionRichTextBox" Grid.Column="1" Grid.Row="1"/>-->
+        <TextBox x:Name="sectionTextBox" Grid.Column="1" Grid.Row="1" Padding="5"/>
+
+        <TextBlock x:Name="descriptionTextBlock" Grid.Column="0" Grid.Row="1" FontFamily="Monaspace Argon"/>
+
+        <StackPanel x:Name="tagsPanel" Grid.Row="1" Grid.Column="2">
+            
+        </StackPanel>
+    </Grid>
+</UserControl>

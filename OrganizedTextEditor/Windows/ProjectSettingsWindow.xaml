@@ -1,0 +1,19 @@
+﻿<Window x:Class="OrganizedTextEditor.Windows.ProjectSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrganizedTextEditor.Windows" xmlns:options="clr-namespace:OrganizedTextEditor.Controls.Options"
+        mc:Ignorable="d"
+        Title="Project Settings" 
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner">
+    <StackPanel HorizontalAlignment="Left" Margin="10">
+        <Label Content="Tag Options" />
+        <options:TagOptionsComponent x:Name="tagOptions"/>
+
+        <Label Content="Comment Status Options" />
+        <options:CommentStatusesComponent x:Name="commentStatusOptions"/>
+        
+    </StackPanel>
+</Window>
